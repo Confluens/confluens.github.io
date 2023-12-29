@@ -1,0 +1,8 @@
+description: >-
+  Confluens brengt bedrijven bijeen door expertise en management van het integratieproces
+  bij bedrijfsfusie.
+domain: confluens.github.io
+plugins:
+  - jekyll-postcss
+theme:
+url: https://confluens.github.io
