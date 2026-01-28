@@ -1,0 +1,91 @@
+.sr-only {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+:is(.contact-details, .footer-nav) {
+  list-style-type: none;
+  padding-inline: 0;
+  > li {
+    padding-inline-start: 0;
+  }
+  > li:not(:last-child) {
+    margin-block-end: 0.25rem;
+  }
+}
+.contact-details a {
+  font-weight: 500;
+}
+.icon-fill,
+.icon-outline {
+  display: inline-block;
+  height: 1.5rem;
+  margin-inline-end: 0.5rem;
+  width: 1.5rem;
+}
+.icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+.icon-outline {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+}
+.masthead {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: max-content;
+}
+.tagline {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+.vcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin-block: 3rem;
+}
+@container main-content (width > 28rem) {
+  .vcard {
+    flex-direction: row;
+    column-gap: 2rem;
+    row-gap: 0;
+    text-align: start;
+  }
+}
+.vcard-figure {
+  margin: 0;
+  width: min(100%, 10rem);
+  > .photo {
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+.vcard-body {
+  flex: 1;
+  > .name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-block: 0 0.25rem;
+  }
+  > .job-title {
+    font-weight: 500;
+    max-width: 20ch;
+  }
+}

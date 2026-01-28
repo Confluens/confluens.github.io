@@ -1,8 +1,42 @@
-description: >-
-  Confluens brengt bedrijven bijeen door expertise en management van het integratieproces
-  bij bedrijfsfusie.
-domain: confluens.github.io
+author: Jan Gerrit Post
+description: Ik help zakelijke dienstverleners een succesvolle bedrijfsintegratie na acquisitie of fusie te realiseren
+email: info@confluens.nl
+encoding: UTF-8
+lang: nl-NL
+title: Confluens - Bedrijfsintegratie interimmanagement &amp; advies
+
+# Build
+kramdown:
+  auto_ids: false
+permalink: /:categories/:year/:month/:title
+sass:
+  sourcemap: development
+  style: compressed
+strict_front_matter: true
+
+# Compress HTML in Jekyll
+# https://github.com/penibelst/jekyll-compress-html
+compress_html:
+  clippings: all
+  comments: all
+  blanklines: false
+  profile: false
+  startings:
+  endings:
+
+# Plugins
 plugins:
-  - jekyll-postcss
-theme:
-url: https://confluens.github.io
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-default-layout
+
+optional_front_matter:
+  remove_originals: true
+titles_from_headings:
+  enabled: true
+  strip_title: false
+  collections: false
+relative_links:
+  enabled: true
+  collections: false

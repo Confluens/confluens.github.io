@@ -1,7 +1,18 @@
+# Git
+.gitignore
+
+# MacOS
 .DS_Store
 .ruby-version
+
+# Jekyll
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 _site
+
+# Bundler
+Gemfile.local
+Gemfile.local.lock
+Gemfile.lock
 vendor

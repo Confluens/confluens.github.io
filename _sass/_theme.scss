@@ -1,0 +1,38 @@
+html {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+body {
+  font-family: "Instrument Sans", sans-serif;
+}
+a:active,
+a:hover,
+a:link,
+a:visited,
+strong,
+.job-title {
+  color: var(--cobalt);
+}
+h1,
+h2,
+h3,
+strong,
+.home-link {
+  font-weight: 600;
+}
+
+.page-header {
+  background-color: var(--cobalt);
+  color: var(--white);
+}
+.page-footer {
+  color: var(--text-muted-color);
+}
+:is(.footer-nav, .logo) a {
+  color: currentColor;
+}
+.lead p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-block-end: 1rem;
+}

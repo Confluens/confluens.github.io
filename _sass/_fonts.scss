@@ -1,0 +1,9 @@
+@font-face {
+  font-display: swap;
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  src:
+    local("Instrument Sans"),
+    url("/assets/fonts/InstrumentSans-subset.woff2") format("woff2") tech(variations);
+}
